@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고의로 렉을 유발하는 예제</title>
+    <script>
+        // 무한 루프를 이용해 CPU를 과도하게 사용하도록 만들기
+        function induceLag() {
+            while(true) {
+                // 아무 작업도 하지 않음으로써 CPU를 계속 사용하게 만듦
+            }
+        }
+
+        // 페이지가 로드되면 렉을 유발하는 코드 실행
+        window.onload = function() {
+            induceLag();
+        };
+    </script>
+</head>
+<body>
+    <h1>고의로 렉을 유발하는 페이지</h1>
+</body>
+</html>
